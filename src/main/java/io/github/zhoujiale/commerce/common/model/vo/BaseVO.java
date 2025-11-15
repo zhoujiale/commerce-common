@@ -12,6 +12,9 @@ import java.io.Serializable;
 @Schema(description = "基础响应")
 public class BaseVO implements Serializable {
 
+    @Schema(description = "id")
+    protected Long id;
+
     public void strToList(){
         throw new RuntimeException("请实现字符串转列表");
     }

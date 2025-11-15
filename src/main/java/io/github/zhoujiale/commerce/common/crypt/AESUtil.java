@@ -27,7 +27,6 @@ public class AESUtil {
 
     /**
      * @description 获取密钥
-     * @author zhou
      * @created  2021/1/9 21:45
      * @param
      * @return byte[]
@@ -47,7 +46,6 @@ public class AESUtil {
 
     /**
      * @description 加密
-     * @author zhou
      * @created  2021/1/9 21:52
      * @param rawData 明文
      * @param key 密钥
@@ -67,7 +65,6 @@ public class AESUtil {
 
     /**
      * @description 解密
-     * @author zhou
      * @created  2021/1/9 22:04
      * @param enStr 密文
      * @param key 密钥

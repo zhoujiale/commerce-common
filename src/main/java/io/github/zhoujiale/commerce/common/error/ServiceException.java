@@ -1,10 +1,9 @@
 package io.github.zhoujiale.commerce.common.error;
 
+import io.github.zhoujiale.commerce.common.enums.BaseStatusType;
+import io.github.zhoujiale.commerce.common.enums.ResponseCodeEnum;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import io.github.zhoujiale.commerce.common.enums.AuthErrorEnum;
-import io.github.zhoujiale.commerce.common.enums.ResponseCodeEnum;
-import io.github.zhoujiale.commerce.common.enums.SystemErrorEnum;
 
 /**
  * 服务异常类
@@ -20,13 +19,8 @@ public class ServiceException extends RuntimeException{
         this.code = responseCodeEnum.getCode();
     }
 
-    public ServiceException(SystemErrorEnum systemErrorEnum){
-        super(systemErrorEnum.getMsg());
-        this.code = systemErrorEnum.getCode();
-    }
-
-    public ServiceException(AuthErrorEnum authErrorEnum){
-        super(authErrorEnum.getMsg());
-        this.code = authErrorEnum.getCode();
+    public ServiceException(BaseStatusType baseStatusType){
+        super(baseStatusType.getMsg());
+        this.code = baseStatusType.getCode();
     }
 }

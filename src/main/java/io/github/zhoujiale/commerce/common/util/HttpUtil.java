@@ -14,7 +14,6 @@ public class HttpUtil {
 
     /**
      * @description 读取请求
-     * @author zhou
      * @created  2019/3/11 19:37
      * @param
      * @return

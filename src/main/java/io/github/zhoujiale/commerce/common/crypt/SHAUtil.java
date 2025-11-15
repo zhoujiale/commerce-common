@@ -24,7 +24,6 @@ public class SHAUtil {
 
     /**
      * @description sha加密
-     * @author zhou
      * @created  2021/1/9 19:42
      * @param rawData 明文
      * @param algorithm 算法

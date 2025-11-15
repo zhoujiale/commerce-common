@@ -16,11 +16,14 @@
     <description>A commerce common module</description>
     <packaging>jar</packaging>
 
+    <url>https://github.com/zhoujiale/commerce-common</url>
+
     <properties>
         <java.version>17</java.version>
         <skipTests>true</skipTests>
         <mybatis-generator.version>1.4.2</mybatis-generator.version>
         <jakarta-validation.version>3.0.2</jakarta-validation.version>
+        <jakarta.servlet-api.version>6.0.0</jakarta.servlet-api.version>
     </properties>
 
     <dependencies>
@@ -47,10 +50,12 @@
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>${springdoc.version}</version>
         </dependency>
         <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
+            <version>${jakarta.servlet-api.version}</version>
         </dependency>
     </dependencies>
 
@@ -60,12 +65,43 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <encoding>${project.build.sourceEncoding}</encoding>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target}</target>
-                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>zhoujiale</name>
+            <email>1330690025@qq.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com:zhoujiale/commerce-common.git</connection>
+        <developerConnection>scm:git:ssh://github.com:zhoujiale/commerce-common.git</developerConnection>
+        <url>https://github.com/zhoujiale/commerce-common</url>
+    </scm>
 </project>

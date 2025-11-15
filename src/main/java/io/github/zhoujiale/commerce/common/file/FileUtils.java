@@ -26,7 +26,6 @@ public class FileUtils {
      * @param file
      * @return java.lang.String
      * @description 获取文件后缀
-     * @author zhou
      * @create 2021/8/10 15:45
      **/
     public static String getSuffix(File file) {
@@ -39,7 +38,6 @@ public class FileUtils {
      * @return java.lang.String
      * @description 读取文件到字符串
      * @date 2022/9/2 14:21
-     * @author zhou
      */
     public static String getStrByFile(File file) {
         StringBuilder stringBuilder = new StringBuilder();
@@ -59,7 +57,6 @@ public class FileUtils {
     /**
      * @description 获取压缩文件
      * @date 2022/8/15 13:35
-     * @author zhou
      * @param filePathList 文件路径列表
      * @param zipFilePath 压缩文件路径
      * @param zipFileParentPath 压缩文件父路径
@@ -91,7 +88,6 @@ public class FileUtils {
     /**
      * @description
      * @date 2022/9/2 15:30
-     * @author zhou
      * @param srcFileList 文件路径列表
      * @param zipFile 压缩文件
      * @param zipFileParentPath 压缩文件父路径

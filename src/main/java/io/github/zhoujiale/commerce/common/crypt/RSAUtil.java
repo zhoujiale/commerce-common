@@ -24,7 +24,6 @@ public class RSAUtil {
 
     /**
      * @description 获取密钥对
-     * @author zhou
      * @created  2021/1/10 16:14
      * @param
      * @return java.security.KeyPair
@@ -42,7 +41,6 @@ public class RSAUtil {
 
     /**
      * @description 私钥加密
-     * @author zhou
      * @created  2021/1/10 16:37
      * @param rawData 明文
      * @param privateRSAKey rsa私钥
@@ -65,7 +63,6 @@ public class RSAUtil {
 
     /**
      * @description 公钥解密
-     * @author zhou
      * @created  2021/1/10 16:40
      * @param enStr 密文
      * @param publicRSAKey 公钥
@@ -88,7 +85,6 @@ public class RSAUtil {
 
     /**
      * @description 公钥加密
-     * @author zhou
      * @created  2021/1/10 16:48
      * @param rawData 明文
      * @param publicRSAKey RSA公钥
@@ -111,7 +107,6 @@ public class RSAUtil {
 
     /**
      * @description 私钥解密
-     * @author zhou
      * @created  2021/1/10 16:51
      * @param enStr 密文
      * @param privateRSAKey RSA私钥

@@ -20,7 +20,6 @@ public class MD5Util {
 
     /**
      * @description md5加密
-     * @author zhou
      * @create 2021/1/8 19:51
      * @param rawData  原始数据
      * @return java.lang.String

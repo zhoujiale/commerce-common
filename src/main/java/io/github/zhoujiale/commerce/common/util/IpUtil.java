@@ -2,8 +2,6 @@ package io.github.zhoujiale.commerce.common.util;
 
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
-import io.github.zhoujiale.commerce.common.enums.SystemErrorEnum;
-import io.github.zhoujiale.commerce.common.error.ServiceException;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -58,15 +56,4 @@ public class IpUtil {
         return ipAddress;
     }
 
-    public static String getServerIp(){
-        InetAddress inetAddress = null;
-        try {
-            inetAddress = InetAddress.getLocalHost();
-            log.info("host:{}",inetAddress);
-        } catch (UnknownHostException e) {
-            log.error(e.getMessage(),e);
-            throw new ServiceException(SystemErrorEnum.REQUEST_ERROR);
-        }
-        return inetAddress.getHostAddress();
-    }
 }

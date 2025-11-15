@@ -2,16 +2,16 @@ package io.github.zhoujiale.commerce.common.model.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * 字典数据
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 @Schema(description = "字典数据")
-public class SystemDictDataVO {
+public class SystemDictDataVO extends BaseVO{
 
-    @Schema(description = "id")
-    private Long id;
 
     @Schema(description = "字典id")
     private Long dictId;

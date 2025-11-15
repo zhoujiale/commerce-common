@@ -8,12 +8,12 @@ public interface CacheConstant {
     /**
      * 统一前缀
      **/
-    String CACHE_NAMESPACE = "commerce:";
+    String CACHE_NAMESPACE = System.getenv().getOrDefault("CACHE_NAMESPACE","commerce:");
 
     String SYS_DICT = "sys_dict:";
 
-
-    static String getCacheKey(String key) {
+    static String getCacheKey(String key){
         return CACHE_NAMESPACE + key;
     }
+
 }
